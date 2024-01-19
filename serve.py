@@ -12,7 +12,7 @@ def getseed():
 
 @app.route('/', methods=['POST'])
 def postseed():
-    command = 'python3 /home/ubuntu/MP2/stress_cpu.py'
+    command = 'python3 /home/ubuntu/Cloud/stress_cpu.py'
     p = subprocess.Popen(
         [command],
         shell=True,
