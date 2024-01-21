@@ -18,9 +18,8 @@ def postseed():
         shell=True,
         stdin=None,
         stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        close_fds=True)
-    out, err = p.communicate()
+        stderr=subprocess.PIPE)
+    #out, err = p.communicate()
     return "sub process initiated "
 
 if __name__ == '__main__':
